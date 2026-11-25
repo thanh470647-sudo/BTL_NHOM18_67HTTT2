@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casio fx-580VN X</title>
+    <title>Máy tính</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +12,8 @@
     <div class="calculator">
 
         <div class="header">
-            <div>
-                <h2>CASIO</h2>
-                <p>fx-580VN X</p>
-            </div>
-            <span>CLASSWIZ</span>
+            <h2>SCIENTIFIC</h2>
+            <p>CALCULATOR</p>
         </div>
 
         <div class="screen">
@@ -25,52 +22,33 @@
         </div>
 
         <div class="buttons">
+            <button class="operator" onclick="clearAll()">AC</button>
+            <button class="operator" onclick="deleteOne()">DEL</button>
+            <button class="operator" onclick="addValue('÷')">÷</button>
+            <button class="operator" onclick="addValue('×')">×</button>
 
-            <button class="function">SHIFT</button>
-            <button class="function">ALPHA</button>
-            <button class="function">MODE</button>
-            <button class="function">ON</button>
-            <button class="function">Ans</button>
+            <button onclick="addValue('7')">7</button>
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button class="operator" onclick="addValue('−')">−</button>
 
-            <button class="function">sin</button>
-            <button class="function">cos</button>
-            <button class="function">tan</button>
-            <button class="function">log</button>
-            <button class="function">ln</button>
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+            <button onclick="addValue('6')">6</button>
+            <button class="operator" onclick="addValue('+')">+</button>
 
-            <button class="function">√</button>
-            <button class="function">x²</button>
-            <button class="function">π</button>
-            <button class="function">(</button>
-            <button class="function">)</button>
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+            <button class="equal" onclick="calculate()">=</button>
 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">DEL</button>
-            <button class="operator">AC</button>
-
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">×</button>
-            <button class="operator">÷</button>
-
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-            <button class="operator">−</button>
-
-            <button>0</button>
-            <button>.</button>
-            <button>EXP</button>
-            <button class="operator">−</button>
-            <button class="equal">=</button>
-
+            <button onclick="addValue('0')" class="zero">0</button>
+            <button onclick="addValue('.')">.</button>
         </div>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
